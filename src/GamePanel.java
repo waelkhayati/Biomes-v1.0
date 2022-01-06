@@ -167,22 +167,23 @@ public class GamePanel  extends javax.swing.JPanel implements ActionListener {
                 
                 for (int i=0;i<14;i++){
                     walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\sand.png" )),(offset+i*50),600,s,s));
+                    walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\sand.png" )),(offset+i*50),550,s,s));
                 } 
                 
-               walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\cactus.png" )),(offset+50+150),550,s,s));
+               walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\cactus.png" )),(offset+50+150),500,s,s));
               // walls.add(new wall(0,ImageIO.read( new File("C:\\Users\\sarra\\Desktop\\game\\Biomes\\Assets\\cactus.png" )),(offset+50+350),550,s,s));
-                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\cactus.png" )),(offset+50+500),550,s,s));
                 walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\cactus.png" )),(offset+50+500),500,s,s));
+                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\cactus.png" )),(offset+50+500),450,s,s));
 
                 
             }
             case 1 -> {
                 
                 for (int i=1;i<5;i++){
-                    walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\wood.png" )),(offset+i*50),600,s,s));
+                    walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\wood.png" )),(offset+i*50),550,s,s));
                 } 
                 for (int i=9;i<13;i++){
-                    walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\wood.png" )),(offset+i*50),600,s,s));
+                    walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\wood.png" )),(offset+i*50),550,s,s));
                 } 
                 
               /*  for (int i=0;i<14;i++){
@@ -204,10 +205,10 @@ public class GamePanel  extends javax.swing.JPanel implements ActionListener {
             }
             case 2 -> {
                 for (int i=2;i<5;i++){
-                    walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\wood.png" )),(offset+i*50),600,s,s));
+                    walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\wood.png" )),(offset+i*50),550,s,s));
                 } 
                 for (int i=9;i<11;i++){
-                    walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\wood.png" )),(offset+i*50),600,s,s));
+                    walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\wood.png" )),(offset+i*50),550,s,s));
                 } 
                 
                 /*for (int i=0;i<5 ;i++){
@@ -224,28 +225,36 @@ public class GamePanel  extends javax.swing.JPanel implements ActionListener {
             case 3 -> {
                 
                 for (int i=0;i<3 ;i++){
-                    walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+i*50),600,s,s));
+                    walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+i*50),550,s,s));
                 }
                 for (int i=3;i<5 ;i++){
-                    walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+i*50),600,s,s));
+                    walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+i*50),550,s,s));
                 }
                 
                 for (int i=2;i<5 ;i++){
-                    walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+450+i*50),600,s,s));
+                    walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+450+i*50),550,s,s));
                 }
                 
                 for (int i=0;i<2 ;i++){
-                    walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+450+i*50),600,s,s));
+                    walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+450+i*50),550,s,s));
                 }
-                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),offset+150,550,s,s));
-                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),offset+200,550,s,s));
+                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),offset+150,500,s,s));
                 walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),offset+200,500,s,s));
-                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+200),450,s,s));
-                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+500),550,s,s));
-                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+450),550,s,s));
+                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),offset+200,450,s,s));
+                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+200),400,s,s));
+                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+500),500,s,s));
                 walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+450),500,s,s));
-                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+450),450,s,s));
-        
+                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+450),450,s,s));
+                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+450),400,s,s));
+                
+                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset),600,s,s));
+                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+50),600,s,s));
+                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+100),600,s,s));
+                
+                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+500),600,s,s));
+                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+550),600,s,s));
+                walls.add(new wall(3,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+600),600,s,s));                
+                
                 walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\thorns.png" )),(offset+50),550,s,s));
                 walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\thorns.png" )),(offset+50+500),550,s,s));
             
@@ -253,15 +262,18 @@ public class GamePanel  extends javax.swing.JPanel implements ActionListener {
             case 4 -> {
                 for (int i=0;i<14;i++){
                     walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\snow.png" )),(offset+i*50),600,s,s));
-                } 
-                for (int i=4;i<9;i++){
+                }                 
+                for (int i=0;i<14;i++){
                     walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\snow.png" )),(offset+i*50),550,s,s));
                 } 
-                for (int i=6;i<8;i++){
+                for (int i=4;i<9;i++){
                     walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\snow.png" )),(offset+i*50),500,s,s));
                 } 
-                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+450),550,s,s));
-                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+250),500,s,s));
+                for (int i=6;i<8;i++){
+                    walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\snow.png" )),(offset+i*50),450,s,s));
+                } 
+                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+450),500,s,s));
+                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+250),450,s,s));
                 /*
                 for (int i=0;i<5;i++){
                     walls.add(new wall(4,ImageIO.read( new File("C:\\Users\\sarra\\Desktop\\game\\Biomes\\Assets\\redrocks.png" )),(offset+i*50),600,s,s));
@@ -321,20 +333,23 @@ public class GamePanel  extends javax.swing.JPanel implements ActionListener {
                 for (int i=0;i<14;i++){
                     walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\snow.png" )),(offset+i*50),600,s,s));
                 } 
-                for (int i=1;i<8;i++){
+                for (int i=0;i<14;i++){
                     walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\snow.png" )),(offset+i*50),550,s,s));
-                }
-                for (int i=2;i<8;i++){
+                } 
+                for (int i=1;i<8;i++){
                     walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\snow.png" )),(offset+i*50),500,s,s));
                 }
-                for (int i=6;i<8;i++){
+                for (int i=2;i<8;i++){
                     walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\snow.png" )),(offset+i*50),450,s,s));
                 }
-                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+200),450,s,s));
-                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+250),450,s,s));
-                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+400),550,s,s));
-                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+450),550,s,s));
-                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+500),550,s,s));
+                for (int i=6;i<8;i++){
+                    walls.add(new wall(8,ImageIO.read( new File("src\\\\assets\\\\snow.png" )),(offset+i*50),400,s,s));
+                }
+                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+200),400,s,s));
+                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+250),400,s,s));
+                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+400),500,s,s));
+                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+450),500,s,s));
+                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\icicle.png" )),(offset+500),500,s,s));
                 /*
                 for (int i=0;i<7;i++){
                     walls.add(new wall(10,ImageIO.read( new File("C:\\Users\\sarra\\Desktop\\game\\Biomes\\Assets\\snow.png" )),(offset+350+i*50),600,s,s));
@@ -349,22 +364,29 @@ public class GamePanel  extends javax.swing.JPanel implements ActionListener {
                 }
             case 7 -> {
                 
-                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\thorns.png" )),offset+50,550,s,s));
+                walls.add(new wall(0,ImageIO.read( new File("src\\\\assets\\\\thorns.png" )),offset+50,500,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset),550,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),offset+50,550,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),offset+100,550,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset),600,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),offset+50,600,s,s));
-                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),offset+100,600,s,s)); 
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),offset+100,600,s,s));
                 
-                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),offset+200,500,s,s));
-                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+250),500,s,s)); 
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),offset+200,450,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+250),450,s,s)); 
                 
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),offset+200,500,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+250),500,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),offset+200,550,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+250),550,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),offset+200,600,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+250),600,s,s));
                 
-                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+350),400,s,s));
-                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+400),400,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+350),350,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+400),350,s,s));
                 
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+350),400,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+400),400,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+350),450,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+400),450,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+350),500,s,s));
@@ -374,15 +396,18 @@ public class GamePanel  extends javax.swing.JPanel implements ActionListener {
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+350),600,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+400),600,s,s));
                 
-                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+500),500,s,s));
-                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+550),500,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+500),450,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+550),450,s,s));
                 
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+500),500,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+550),500,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+500),550,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+550),550,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+500),600,s,s));
                 walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+550),600,s,s));
                 
-                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+650),600,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\grass.png" )),(offset+650),550,s,s));
+                walls.add(new wall(7,ImageIO.read( new File("src\\\\assets\\\\dirt.png" )),(offset+650),600,s,s));
                 
             }
         }
